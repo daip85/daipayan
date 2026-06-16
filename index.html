@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Daipayan Lodh — Delivery Director | AI Innovation Leader | Portfolio Management | Oracle NetSuite PS | 16 Years Enterprise Delivery">
+<meta name="keywords" content="Daipayan Lodh, Delivery Director, Portfolio Director, AI Innovation, Oracle NetSuite, PMP, PSM, ITIL, GDC, Programme Management">
+<title>Daipayan Lodh — Delivery Director | AI Innovation Leader</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=DM+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --navy: #0f2040;
+  --navy2: #172a54;
+  --gold: #b8860b;
+  --gold-l: #fdf5dc;
+  --teal: #0a4060;
+  --slate: #334466;
+  --ink: #0d1117;
+  --paper: #f9f8f5;
+  --card: #ffffff;
+  --border: #dde2ec;
+  --mist: #f2f4f8;
+  --dim: #64748b;
+  --bright: #0d1117;
+  --green: #15803d;
+  --amber: #b45309;
+  --sans: 'DM Sans', sans-serif;
+  --mono: 'DM Mono', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 15px; }
+
+body {
+  font-family: var(--sans);
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.65;
+}
+
+/* ── NAV ── */
+.nav {
+  position: sticky; top: 0; z-index: 200;
+  background: var(--navy);
+  border-bottom: 2px solid var(--gold);
+  display: flex; align-items: center;
+  padding: 0 40px; height: 54px;
+}
+.nav-name {
+  font-family: var(--mono); font-size: 12px; font-weight: 600;
+  color: #d0dff0; letter-spacing: .08em; margin-right: auto;
+}
+.nav-links { display: flex; gap: 0; }
+.nav-a {
+  font-size: 12px; padding: 0 15px; height: 54px;
+  display: flex; align-items: center;
+  color: #6a9abf; text-decoration: none;
+  border-bottom: 3px solid transparent;
+  transition: all .15s; letter-spacing: .02em;
+}
+.nav-a:hover { color: #fff; border-bottom-color: var(--gold); }
+.nav-cta {
+  margin-left: 14px;
+  background: var(--gold); color: var(--navy) !important;
+  font-weight: 700; padding: 0 16px;
+  border-radius: 3px; border-bottom: none !important;
+  font-size: 11px; letter-spacing: .06em;
+}
+
+/* ── HERO ── */
+.hero {
+  background: var(--navy);
+  padding: 56px 0 0;
+  position: relative; overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 72% 38%, rgba(184,134,11,.07) 0%, transparent 58%);
+  pointer-events: none;
+}
+.hero-inner {
+  max-width: 1080px; margin: 0 auto; padding: 0 40px 52px;
+  display: grid; grid-template-columns: 1fr auto;
+  gap: 40px; align-items: end; position: relative;
+}
+.hero-eyebrow {
+  font-family: var(--mono); font-size: 10.5px;
+  letter-spacing: .22em; color: var(--gold);
+  margin-bottom: 14px; text-transform: uppercase;
+}
+.hero-name {
+  font-size: 46px; font-weight: 700; color: #fff;
+  letter-spacing: -.04em; line-height: 1.05; margin-bottom: 10px;
+}
+.hero-title { font-size: 16px; color: #a0c0e0; margin-bottom: 6px; }
+.hero-sub {
+  font-family: var(--mono); font-size: 11px;
+  color: #5a7a9a; letter-spacing: .04em; line-height: 1.7;
+}
+.hero-sub span { color: var(--gold); font-weight: 600; }
+.hero-contact { text-align: right; }
+.hero-contact a {
+  display: block; font-size: 12.5px;
+  color: #7aabcc; text-decoration: none;
+  margin-bottom: 8px; transition: color .12s;
+}
+.hero-contact a:hover { color: #fff; }
+
+/* ── METRICS STRIP ── */
+.metrics {
+  background: rgba(255,255,255,.04);
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+.metrics-inner {
+  max-width: 1080px; margin: 0 auto; padding: 0 40px;
+  display: grid; grid-template-columns: repeat(6, 1fr);
+}
+.metric {
+  padding: 18px 16px; border-right: 1px solid rgba(255,255,255,.07);
+  text-align: center;
+}
+.metric:last-child { border-right: none; }
+.metric-n {
+  font-family: var(--mono); font-size: 26px; font-weight: 700;
+  color: var(--gold); line-height: 1; margin-bottom: 4px;
+}
+.metric-l { font-size: 11px; color: #5a7a9a; line-height: 1.4; }
+
+/* ── LAYOUT ── */
+.page { max-width: 1080px; margin: 0 auto; padding: 52px 40px; }
+.cols { display: grid; grid-template-columns: 1fr 300px; gap: 40px; align-items: start; }
+.main {}
+
+/* ── VIEW SWITCHER ── */
+.switcher {
+  display: flex; gap: 6px; margin-bottom: 28px; flex-wrap: wrap;
+  align-items: center;
+}
+.sw-label { font-size: 11.5px; color: var(--dim); margin-right: 4px; }
+.sw-btn {
+  font-size: 11.5px; font-weight: 600;
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  border-radius: 3px; background: var(--card);
+  color: var(--dim); cursor: pointer; transition: all .12s;
+}
+.sw-btn:hover { border-color: var(--navy); color: var(--navy); }
+.sw-btn.on { background: var(--navy); color: #fff; border-color: var(--navy); }
+
+/* ── SECTION ── */
+.sec { margin-bottom: 44px; }
+.sec-label {
+  font-family: var(--mono); font-size: 10px;
+  letter-spacing: .22em; color: var(--gold);
+  text-transform: uppercase; margin-bottom: 6px;
+}
+.sec-title {
+  font-size: 18px; font-weight: 700; color: var(--navy);
+  letter-spacing: -.02em; padding-bottom: 8px;
+  border-bottom: 2px solid var(--navy); margin-bottom: 18px;
+}
+
+/* ── SUMMARY ── */
+.summary-text {
+  font-size: 14px; line-height: 1.78; color: #222233;
+}
+.summary-text strong { color: var(--navy); }
+
+/* ── COMPETENCY GRID ── */
+.comp-group { margin-bottom: 16px; }
+.comp-group-label {
+  font-size: 11.5px; font-weight: 700; color: var(--navy);
+  text-transform: uppercase; letter-spacing: .06em; margin-bottom: 8px;
+}
+.comp-grid {
+  display: grid; grid-template-columns: repeat(3,1fr);
+  gap: 5px;
+}
+.comp-item {
+  background: var(--mist); border: 1px solid var(--border);
+  border-left: 3px solid var(--navy);
+  padding: 7px 10px; font-size: 12px; color: var(--ink);
+  border-radius: 2px; line-height: 1.35;
+}
+
+/* ── ROLE CARDS ── */
+.role-card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 4px; margin-bottom: 14px; overflow: hidden;
+}
+.role-hdr {
+  display: flex; justify-content: space-between;
+  align-items: flex-start; padding: 13px 18px 8px;
+  background: var(--mist); border-bottom: 1px solid var(--border);
+  gap: 12px;
+}
+.role-title { font-size: 14.5px; font-weight: 700; color: var(--navy); margin-bottom: 2px; }
+.role-co { font-size: 12px; color: var(--slate); }
+.role-dates {
+  font-family: var(--mono); font-size: 11px; color: var(--dim);
+  white-space: nowrap; flex-shrink: 0; margin-top: 2px;
+}
+.role-promo {
+  padding: 6px 18px; font-size: 12px; color: var(--dim);
+  font-style: italic; border-bottom: 1px solid var(--border);
+  background: #fffef9;
+}
+.role-body { padding: 12px 18px; }
+.role-sub {
+  font-size: 11.5px; font-weight: 700; color: var(--navy);
+  text-transform: uppercase; letter-spacing: .06em;
+  margin: 12px 0 6px;
+}
+.role-sub:first-child { margin-top: 0; }
+
+/* ── BULLETS ── */
+ul.bl { list-style: none; margin: 0; padding: 0; }
+ul.bl li {
+  padding: 4px 0 4px 18px; position: relative;
+  font-size: 13px; color: #222233; line-height: 1.56;
+}
+ul.bl li::before {
+  content: '▸'; position: absolute; left: 0;
+  color: var(--gold); font-size: 11px; top: 6px;
+}
+ul.bl li strong { color: var(--navy); }
+
+/* ── EARLY CAREER ── */
+.early-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 10px; }
+.early-card {
+  background: var(--mist); border: 1px solid var(--border);
+  padding: 12px 14px; border-radius: 3px;
+}
+.early-t { font-size: 13px; font-weight: 700; color: var(--navy); margin-bottom: 2px; }
+.early-c { font-size: 12px; color: var(--slate); margin-bottom: 2px; }
+.early-d { font-family: var(--mono); font-size: 10.5px; color: var(--dim); margin-bottom: 5px; }
+.early-n { font-size: 12px; color: #444; }
+
+/* ── SIDEBAR ── */
+.side-card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 4px; overflow: hidden; margin-bottom: 14px;
+}
+.side-head {
+  background: var(--navy); color: #fff;
+  padding: 9px 14px; font-size: 10.5px;
+  font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+}
+.side-body { padding: 10px 14px; }
+.side-item {
+  padding: 5px 0; border-bottom: 1px solid var(--border);
+  font-size: 12px; color: #333; line-height: 1.45;
+}
+.side-item:last-child { border-bottom: none; }
+.side-item strong {
+  color: var(--navy); display: block;
+  font-size: 11px; margin-bottom: 1px;
+}
+.cert-item { padding: 5px 0; border-bottom: 1px solid var(--border); }
+.cert-item:last-child { border-bottom: none; }
+.cert-n { font-size: 11.5px; font-weight: 600; color: var(--navy); line-height: 1.3; }
+.cert-m { font-size: 10.5px; color: var(--dim); margin-top: 1px; }
+.score-row { display: flex; align-items: center; gap: 8px; padding: 4px 0; border-bottom: 1px solid var(--border); }
+.score-row:last-child { border-bottom: none; }
+.score-label { font-size: 11px; color: #444; flex: 1; }
+.score-bar-w { width: 72px; height: 4px; background: #e5e5e5; border-radius: 2px; overflow: hidden; }
+.score-bar { height: 100%; border-radius: 2px; }
+.score-v { font-family: var(--mono); font-size: 11px; font-weight: 700; width: 28px; text-align: right; }
+.ai-item { padding: 6px 0; border-bottom: 1px solid var(--border); font-size: 12px; }
+.ai-item:last-child { border-bottom: none; }
+.ai-item strong { color: var(--navy); display: block; font-size: 11.5px; margin-bottom: 2px; }
+
+/* ── FOOTER ── */
+.site-footer {
+  background: var(--navy);
+  border-top: 2px solid var(--gold);
+  padding: 22px 40px;
+  text-align: center;
+  font-family: var(--mono); font-size: 11px;
+  color: #4a7a9b; letter-spacing: .08em;
+}
+
+/* ── PRINT ── */
+@media print {
+  .nav, .switcher { display: none; }
+  .cols { grid-template-columns: 1fr 240px; }
+  .hero { padding: 28px 0 0; }
+  .hero-inner { padding: 0 24px 24px; }
+  .page { padding: 28px 24px; }
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 860px) {
+  .nav-links { display: none; }
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-contact { text-align: left; }
+  .metrics-inner { grid-template-columns: repeat(3,1fr); }
+  .metric { border-bottom: 1px solid rgba(255,255,255,.07); }
+  .page { padding: 28px 18px; }
+  .cols { grid-template-columns: 1fr; }
+  .comp-grid { grid-template-columns: repeat(2,1fr); }
+  .early-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-name">DAIPAYAN LODH &nbsp;·&nbsp; DIRECTOR</div>
+  <div class="nav-links">
+    <a class="nav-a" href="#summary">Summary</a>
+    <a class="nav-a" href="#competencies">Competencies</a>
+    <a class="nav-a" href="#experience">Experience</a>
+    <a class="nav-a" href="#credentials">Credentials</a>
+    <a class="nav-a nav-cta" href="mailto:mail2payan@gmail.com">CONTACT</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow">Delivery &amp; Portfolio Director &nbsp;·&nbsp; Oracle NetSuite PS &nbsp;·&nbsp; India GDC &nbsp;·&nbsp; 16 Years</div>
+      <div class="hero-name">Daipayan Lodh</div>
+      <div class="hero-title">PMP &nbsp;|&nbsp; PSM I &nbsp;|&nbsp; ITIL 4 &nbsp;|&nbsp; MBA &nbsp;|&nbsp; Oracle AI Vector Search Certified</div>
+      <div class="hero-sub">
+        <span>$5M+</span> Total Portfolio &nbsp;·&nbsp;
+        <span>51</span> Concurrent Engagements &nbsp;·&nbsp;
+        <span>4</span> Countries &nbsp;·&nbsp;
+        <span>38-Person</span> GDC Organisation &nbsp;·&nbsp;
+        Production LLM Systems Built
+      </div>
+    </div>
+    <div class="hero-contact">
+      <a href="mailto:mail2payan@gmail.com">✉ mail2payan@gmail.com</a>
+      <a href="tel:+919874088154">☎ +91 98740 88154</a>
+      <a href="https://linkedin.com/in/daipayanl" target="_blank" rel="noopener">🔗 linkedin.com/in/daipayanl</a>
+      <a href="#">⌖ Kolkata, West Bengal, India</a>
+    </div>
+  </div>
+  <div class="metrics">
+    <div class="metrics-inner">
+      <div class="metric"><div class="metric-n">$5M+</div><div class="metric-l">Total Portfolio<br>Under Governance</div></div>
+      <div class="metric"><div class="metric-n">51</div><div class="metric-l">Concurrent Active<br>Engagements</div></div>
+      <div class="metric"><div class="metric-n">38</div><div class="metric-l">Person GDC<br>Organisation</div></div>
+      <div class="metric"><div class="metric-n">23×</div><div class="metric-l">Portfolio Growth<br>Over 3.5 Years</div></div>
+      <div class="metric"><div class="metric-n">96%</div><div class="metric-l">JRA Compliance<br>Sustained</div></div>
+      <div class="metric"><div class="metric-n">$7M</div><div class="metric-l">Est. Cumulative<br>Billing Acceleration</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN PAGE -->
+<div class="page">
+
+  <!-- SWITCHER -->
+  <div class="switcher">
+    <span class="sw-label">View profile as:</span>
+    <button class="sw-btn on" onclick="setView('delivery',this)">Delivery Director</button>
+    <button class="sw-btn" onclick="setView('ai',this)">AI Innovation Leader</button>
+    <button class="sw-btn" onclick="setView('tech',this)">Technology Strategy</button>
+  </div>
+
+  <div class="cols">
+  <div class="main">
+
+    <!-- SUMMARY -->
+    <div class="sec" id="summary">
+      <div class="sec-label">Executive Profile</div>
+      <div class="sec-title">Career Summary</div>
+      <p class="summary-text" id="summary-body">
+        Enterprise Delivery Director with 16 years governing high-complexity, multi-country professional services portfolios at scale. <strong>P&amp;L accountability: $5M+ total delivery portfolio</strong> across 51 concurrent client engagements in USA, Canada, India, and Philippines — as named Project Manager (38 direct) and Portfolio/Delivery Lead (13 governed through 6 PMs). Generates $3.6M+ in annual billable value at $250/hr, sustaining <strong>110–130% utilisation overperformance</strong>. Transformed JRA Score compliance from 75–76% (below Oracle PS threshold, team variable pay at risk) to <strong>96% sustained in under 18 months</strong>. Established Centre of Excellence reducing onboarding from 4 weeks to 2 weeks across 300–400 practitioners — estimated <strong>$7M in cumulative billing acceleration</strong>. Scope leakage driven from 30% to 10%, protecting ~$460K annually. Engages CFO, CEO, and VP-level stakeholders on both client and Oracle organisational sides. Builds AI-powered delivery intelligence systems — including production LLM integrations using Claude API and GPT-5 — as self-initiated tools governing the portfolio. Five Oracle NetSuite domain certifications. PMP (Dec 2025), PSM I, ITIL 4, Oracle AI Vector Search.
+      </p>
+    </div>
+
+    <!-- COMPETENCIES -->
+    <div class="sec" id="competencies">
+      <div class="sec-label">Skills &amp; Expertise</div>
+      <div class="sec-title">Core Competencies</div>
+      <div id="comp-body">
+        <div class="comp-group">
+          <div class="comp-group-label">Portfolio &amp; Delivery Leadership</div>
+          <div class="comp-grid">
+            <div class="comp-item">P&amp;L Accountability — $5M+ Portfolio</div>
+            <div class="comp-item">GDC / Global Delivery Centre Leadership</div>
+            <div class="comp-item">51 Concurrent Programme Management</div>
+            <div class="comp-item">Delivery Governance &amp; Risk Management</div>
+            <div class="comp-item">Utilisation &amp; Capacity Modelling</div>
+            <div class="comp-item">Scope Governance &amp; Commercial Protection</div>
+            <div class="comp-item">CoE Design &amp; Leadership</div>
+            <div class="comp-item">JRA &amp; Compliance Transformation</div>
+            <div class="comp-item">EVM / Earned Value Management</div>
+            <div class="comp-item">Monte Carlo Risk Quantification</div>
+            <div class="comp-item">Fixed-Price &amp; T&amp;M Stewardship</div>
+            <div class="comp-item">Operating Model Design</div>
+          </div>
+        </div>
+        <div class="comp-group" style="margin-top:12px">
+          <div class="comp-group-label">AI &amp; Technology</div>
+          <div class="comp-grid">
+            <div class="comp-item">AI Centre of Excellence (CoE) Leadership</div>
+            <div class="comp-item">LLM Integration — Claude API &amp; GPT-5</div>
+            <div class="comp-item">Prompt Engineering (Practitioner-grade)</div>
+            <div class="comp-item">Gen AI Adoption &amp; Change Management</div>
+            <div class="comp-item">Python Data Engineering &amp; ETL Pipelines</div>
+            <div class="comp-item">Oracle AI Vector Search &amp; RAG Architecture</div>
+            <div class="comp-item">Responsible AI Governance</div>
+            <div class="comp-item">AI Transformation Roadmap &amp; Strategy</div>
+            <div class="comp-item">ML &amp; TensorFlow (Practitioner, 2019+)</div>
+          </div>
+        </div>
+        <div class="comp-group" style="margin-top:12px">
+          <div class="comp-group-label">Executive &amp; Leadership</div>
+          <div class="comp-grid">
+            <div class="comp-item">C-Suite Engagement — CFO / CEO / VP</div>
+            <div class="comp-item">Cross-Geography Team Leadership (4 Countries)</div>
+            <div class="comp-item">PMP · PSM I · ITIL 4 (All Current 2025)</div>
+            <div class="comp-item">Oracle NetSuite Certified (5 Domains)</div>
+            <div class="comp-item">Forecast vs Actuals Governance</div>
+            <div class="comp-item">NetSuite PS / SuiteProjects Domain Mastery</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="sec" id="experience">
+      <div class="sec-label">Career History</div>
+      <div class="sec-title">Professional Experience</div>
+
+      <!-- ORACLE CPL -->
+      <div class="role-card">
+        <div class="role-hdr">
+          <div>
+            <div class="role-title">Consulting Portfolio Lead <span style="font-size:12px;font-weight:400;color:var(--dim)">(Director-equivalent · P&amp;L: $5M+)</span></div>
+            <div class="role-co">Oracle NetSuite Professional Services &nbsp;·&nbsp; India GDC SIGBe Vertical · M2M1 · USA · Canada · Philippines · India</div>
+          </div>
+          <div class="role-dates">Oct 2022 – Present</div>
+        </div>
+        <div class="role-promo">Promoted from Senior Project Manager within 12 months. Simultaneously holds PM accountability for 38 direct client engagements and Portfolio Lead governance for 13 programmes through 6 PMs.</div>
+        <div class="role-body" id="oracle-body">
+          <div class="role-sub">Portfolio Scale &amp; P&amp;L Performance</div>
+          <ul class="bl">
+            <li><strong>Scaled total delivery portfolio from $100K to $5M+</strong> in annual recognised revenue over 3.5 years — governing 51 concurrent client engagements across 4 countries as named PM (38 direct) and Portfolio Lead (13 governed).</li>
+            <li><strong>Generated $3.6M+ in annual billable delivery value</strong> at $250/hr across 1,200+ monthly hours — sustaining 110–130% utilisation overperformance, delivering up to $1.08M above monthly targets annually.</li>
+            <li><strong>Protected ~$460K in annual portfolio revenue</strong> by driving scope leakage from 30% to 10% — structured WBS governance, SOW boundary discipline, burn-down acknowledgement, and leadership visibility on all client communications.</li>
+            <li><strong>Engaged CFO, CEO, and VP-level client stakeholders</strong> and Oracle Director/VP leadership — portfolio risk, capacity strategy, and AI programme outcomes directly informing investment and resourcing decisions.</li>
+          </ul>
+          <div class="role-sub">Delivery Transformation &amp; Operational Excellence</div>
+          <ul class="bl">
+            <li><strong>Transformed JRA Score compliance from 75–76% to 96% sustained</strong> (Oracle PS minimum threshold) in 12–18 months — protecting team variable pay at direct financial risk through automated monitoring, individual KPI coaching, and documentation governance.</li>
+            <li><strong>Built Centre of Excellence reducing consultant onboarding from 4 weeks to 2 weeks</strong> across 300–400 practitioners — estimated $7M cumulative billing acceleration at $250/hr; CoE governs delivery standards, methodology, knowledge management, and quality assurance.</li>
+            <li><strong>Reduced client escalations 20%</strong> through structured risk management, WBS-based scope governance, proactive stakeholder communication, and early-warning dashboard visibility.</li>
+          </ul>
+          <div class="role-sub">AI Innovation &amp; Built Systems (Self-initiated — no dedicated engineering team)</div>
+          <ul class="bl">
+            <li><strong>Architected Claude API-based LLM compliance intelligence system</strong> — automated anomaly detection, forecast vs. actuals, task-quality evaluation, and KPI dashboards; compressed monthly reporting from <strong>37 hours to under 3 hours</strong> for 100 practitioners.</li>
+            <li><strong>Co-designed GPT-5 agentic global staffing platform</strong> — 1,000–1,500 resource decisions monthly across 4 countries; timezone-aware, skills-matched. Multi-day staffing cycles → same-day assignment.</li>
+            <li><strong>Built AI-powered PM Web Tool</strong> — Gantt, WBS, Agile, RAID, EVM, budget tracking, portfolio dashboards in single offline HTML file. Zero infrastructure. Deployed across India GDC.</li>
+            <li><strong>Built Python ETL data pipeline</strong> ingesting SuiteProjects XML/CSV exports, computing KPI scores, generating automated charts — underpins all three AI intelligence reporting systems.</li>
+            <li><strong>Led Gen AI adoption programme</strong> for 100+ practitioners; published prompt engineering frameworks (R-T-F, S-O-L-V-E, T-A-G, R-A-C-E) externally. Implemented responsible AI governance framework with compliance scoring, anomaly detection, and audit trails.</li>
+          </ul>
+          <div class="role-sub">Team &amp; People Leadership</div>
+          <ul class="bl">
+            <li><strong>Leads 38-person global delivery organisation</strong> across 3 supervisory tiers — structured weekly governance, individual KPI coaching, and supervisory mentorship framework across India, USA, Philippines.</li>
+            <li><strong>Recognised by Utah Cancer Specialists and Auburn Area Recreation District executive teams</strong> for delivery quality at Oracle NetSuite go-live milestones.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- SR PM -->
+      <div class="role-card">
+        <div class="role-hdr">
+          <div>
+            <div class="role-title">Sr. Project Manager — Customer Success</div>
+            <div class="role-co">Oracle NetSuite Professional Services &nbsp;·&nbsp; India · Hybrid</div>
+          </div>
+          <div class="role-dates">Oct 2022 – Sep 2025</div>
+        </div>
+        <div class="role-body">
+          <ul class="bl">
+            <li><strong>Led complex NetSuite implementations across multiple enterprise clients</strong> — owning scope, schedule, budget, and stakeholder alignment across $200K–$1M+ individual engagements.</li>
+            <li><strong>Managed 10–14 concurrent NetSuite implementation programmes</strong> simultaneously across multiple industries and geographies.</li>
+            <li><strong>Drove scope protection discipline</strong> that reduced uncompensated work from 30% to 10% across portfolio — institutionalised as team standard.</li>
+            <li><strong>Established delivery governance, risk management, and communication frameworks</strong> adopted across GDC team.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- COGNIZANT -->
+      <div class="role-card">
+        <div class="role-hdr">
+          <div>
+            <div class="role-title">Manager — Projects</div>
+            <div class="role-co">Cognizant Technology Solutions &nbsp;·&nbsp; Kolkata, West Bengal, India · Remote</div>
+          </div>
+          <div class="role-dates">Nov 2021 – Sep 2022</div>
+        </div>
+        <div class="role-body">
+          <ul class="bl">
+            <li><strong>Delivered $1M enterprise digital programme for Hoya Surgical Optics</strong> — end-to-end PM across full CMS platform build; completed on time before transitioning to Oracle NetSuite to pursue greater portfolio scope.</li>
+            <li><strong>Owned project governance including budgeting, forecasting, margin tracking, and delivery metrics</strong> across cross-functional engineering and enterprise client teams.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- INDUS NET -->
+      <div class="role-card">
+        <div class="role-hdr">
+          <div>
+            <div class="role-title">Project Manager</div>
+            <div class="role-co">Indus Net Technologies Pvt. Ltd. &nbsp;·&nbsp; Greater Kolkata Area · On-site</div>
+          </div>
+          <div class="role-dates">May 2018 – Nov 2021</div>
+        </div>
+        <div class="role-body">
+          <ul class="bl">
+            <li><strong>Governed $3–4M multi-industry delivery portfolio</strong> across 20–25 direct reports in 5 geographies — Switzerland, USA, UK, Middle East, Kenya — spanning BFSI, e-commerce, and mobility concurrently.</li>
+            <li><strong>Delivered Accuride.com on Magento + PWA architecture</strong> — $300K platform enabling $1M+ monthly client revenue; end-to-end Agile PM, completed on time. Platform remains live and revenue-generating.</li>
+            <li><strong>Pioneered LLM and TensorFlow-based Generative AI development in 2019–2021</strong> — led GenAI travel chatbot programme 2–3 years before mainstream AI adoption; applied AI practitioner lineage predating ChatGPT era.</li>
+            <li><strong>Supported pre-sales initiatives</strong> through estimation, solution planning, and delivery approach definition.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- EARLIER -->
+      <div class="sec-label" style="margin-top:24px">Earlier Career</div>
+      <div class="sec-title" style="font-size:15px">Earlier Roles</div>
+      <div class="early-grid">
+        <div class="early-card">
+          <div class="early-t">Project Manager</div>
+          <div class="early-c">Matrix Media Solutions</div>
+          <div class="early-d">Feb 2017 – May 2018</div>
+          <div class="early-n">$1M social media platform — Middle East client. Solution planning, digital delivery.</div>
+        </div>
+        <div class="early-card">
+          <div class="early-t">Project Manager</div>
+          <div class="early-c">Navigators Software (NAVSOFT)</div>
+          <div class="early-d">Oct 2015 – Feb 2017</div>
+          <div class="early-n">BPCL e-commerce platform (major Indian PSU). Product integrations, feature delivery.</div>
+        </div>
+        <div class="early-card">
+          <div class="early-t">Business Analyst</div>
+          <div class="early-c">Web Spiders</div>
+          <div class="early-d">Apr 2015 – Oct 2015</div>
+          <div class="early-n">Full delivery lifecycle, pre-sales support, cross-functional coordination.</div>
+        </div>
+        <div class="early-card">
+          <div class="early-t">Deputy Manager</div>
+          <div class="early-c">Pinnacle Infotech Solutions</div>
+          <div class="early-d">Mar 2011 – Feb 2015</div>
+          <div class="early-n">Built in-house EPM/ERP system. Multiple performance awards. Software engineering foundation.</div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end main -->
+
+  <!-- SIDEBAR -->
+  <div class="side-col">
+
+    <div class="side-card" id="credentials">
+      <div class="side-head">Certifications</div>
+      <div class="side-body">
+        <div class="cert-item"><div class="cert-n">Oracle NetSuite Certified Accounting Professional</div><div class="cert-m">Oracle · 2025</div></div>
+        <div class="cert-item"><div class="cert-n">Oracle NetSuite Certified BI &amp; Reporting Associate</div><div class="cert-m">Oracle · 2025</div></div>
+        <div class="cert-item"><div class="cert-n">Oracle NetSuite Certified AP / AR / Financial Specialist</div><div class="cert-m">Oracle · 2025</div></div>
+        <div class="cert-item"><div class="cert-n">Oracle AI Vector Search Certified Professional</div><div class="cert-m">Oracle · Aug 2025</div></div>
+        <div class="cert-item"><div class="cert-n">OCI AI Foundations · Data Science · Generative AI</div><div class="cert-m">Oracle Cloud · Aug 2025</div></div>
+        <div class="cert-item"><div class="cert-n">Project Management Professional (PMP)</div><div class="cert-m">PMI · Dec 2025 · Active</div></div>
+        <div class="cert-item"><div class="cert-n">Professional Scrum Master I (PSM I)</div><div class="cert-m">Scrum.org · Apr 2025</div></div>
+        <div class="cert-item"><div class="cert-n">ITIL 4 Foundation in IT Service Management</div><div class="cert-m">PeopleCert · Dec 2025</div></div>
+        <div class="cert-item"><div class="cert-n">Generative AI Overview for Project Managers</div><div class="cert-m">PMI · Sep 2023</div></div>
+        <div class="cert-item"><div class="cert-n">Digital Transformation Using AI/ML with Google Cloud</div><div class="cert-m">Google Cloud / Coursera · Jul 2021</div></div>
+        <div class="cert-item"><div class="cert-n">IBM AI Foundations for Business</div><div class="cert-m">IBM / Coursera · Aug 2020</div></div>
+        <div class="cert-item"><div class="cert-n">Six Sigma Black Belt</div><div class="cert-m">LinkedIn · Dec 2022</div></div>
+      </div>
+    </div>
+
+    <div class="side-card">
+      <div class="side-head">Market Scores</div>
+      <div class="side-body">
+        <div class="score-row"><div class="score-label">ATS Score</div><div class="score-bar-w"><div class="score-bar" style="width:82%;background:#3080d0"></div></div><div class="score-v" style="color:#3080d0">82</div></div>
+        <div class="score-row"><div class="score-label">AI Leadership</div><div class="score-bar-w"><div class="score-bar" style="width:88%;background:#d06030"></div></div><div class="score-v" style="color:#d06030">88</div></div>
+        <div class="score-row"><div class="score-label">Director Readiness</div><div class="score-bar-w"><div class="score-bar" style="width:81%;background:#b8860b"></div></div><div class="score-v" style="color:#b8860b">81</div></div>
+        <div class="score-row"><div class="score-label">Portfolio Leadership</div><div class="score-bar-w"><div class="score-bar" style="width:83%;background:#15803d"></div></div><div class="score-v" style="color:#15803d">83</div></div>
+        <div class="score-row"><div class="score-label">Executive Presence</div><div class="score-bar-w"><div class="score-bar" style="width:84%;background:#0f2040"></div></div><div class="score-v" style="color:#0f2040">84</div></div>
+      </div>
+    </div>
+
+    <div class="side-card">
+      <div class="side-head">AI Systems Built</div>
+      <div class="side-body">
+        <div class="ai-item"><strong>Claude API — Compliance Intelligence</strong>LLM-based · 37hrs → 3hrs/month · 100 users · Automated KPI scoring &amp; anomaly detection</div>
+        <div class="ai-item"><strong>GPT-5 — Global Staffing Platform</strong>Agentic AI · 1,000–1,500 decisions/month · 4 countries · Same-day assignment</div>
+        <div class="ai-item"><strong>AI-Powered PM Web Tool</strong>Gantt + WBS + EVM + RAID + Agile · Single HTML file · Zero infrastructure</div>
+        <div class="ai-item"><strong>Python ETL Pipeline</strong>SuiteProjects XML → KPIs → Charts · Automated monthly reporting</div>
+        <div class="ai-item"><strong>GenAI Travel Chatbot (2019)</strong>TensorFlow + LLM · Pre-ChatGPT · ML practitioner lineage</div>
+      </div>
+    </div>
+
+    <div class="side-card">
+      <div class="side-head">Education</div>
+      <div class="side-body">
+        <div class="side-item"><strong>PGPBM — Information Systems &amp; Finance</strong>Kohinoor Business School / KBSCMR, Khandala · 2007–2009</div>
+        <div class="side-item"><strong>GNIIT — Computer Software Engineering</strong>NIIT, Kolkata · 2010</div>
+        <div class="side-item"><strong>B.Com — Finance</strong>University of Calcutta · 2003–2006</div>
+      </div>
+    </div>
+
+    <div class="side-card">
+      <div class="side-head">Shortlist Probability</div>
+      <div class="side-body">
+        <div class="score-row"><div class="score-label">Delivery Director</div><div class="score-bar-w"><div class="score-bar" style="width:82%;background:#15803d"></div></div><div class="score-v" style="color:#15803d">82%</div></div>
+        <div class="score-row"><div class="score-label">AI Innovation Leader</div><div class="score-bar-w"><div class="score-bar" style="width:78%;background:#15803d"></div></div><div class="score-v" style="color:#15803d">78%</div></div>
+        <div class="score-row"><div class="score-label">Portfolio Director</div><div class="score-bar-w"><div class="score-bar" style="width:70%;background:#b8860b"></div></div><div class="score-v" style="color:#b8860b">70%</div></div>
+        <div class="score-row"><div class="score-label">Tech Strategy Leader</div><div class="score-bar-w"><div class="score-bar" style="width:55%;background:#b45309"></div></div><div class="score-v" style="color:#b45309">55%</div></div>
+      </div>
+    </div>
+
+  </div><!-- end sidebar -->
+
+  </div><!-- end cols -->
+</div><!-- end page -->
+
+<footer class="site-footer">
+  DAIPAYAN LODH &nbsp;·&nbsp; mail2payan@gmail.com &nbsp;·&nbsp; +91 98740 88154 &nbsp;·&nbsp; linkedin.com/in/daipayanl &nbsp;·&nbsp; Kolkata, India
+</footer>
+
+<script>
+const summaries = {
+  delivery: `Enterprise Delivery Director with 16 years governing high-complexity, multi-country professional services portfolios at scale. <strong>P&L accountability: $5M+ total delivery portfolio</strong> across 51 concurrent client engagements in USA, Canada, India, and Philippines — as named Project Manager (38 direct) and Portfolio/Delivery Lead (13 governed through 6 PMs). Generates $3.6M+ in annual billable value at $250/hr, sustaining <strong>110–130% utilisation overperformance</strong>. Transformed JRA Score compliance from 75–76% to <strong>96% sustained in under 18 months</strong> — protecting team variable pay at direct financial risk. Established Centre of Excellence reducing onboarding from 4 weeks to 2 weeks across 300–400 practitioners — estimated <strong>$7M in cumulative billing acceleration</strong>. Scope leakage from 30% to 10%, protecting ~$460K annually. Engages CFO, CEO, and VP-level stakeholders on both client and Oracle sides. Builds AI-powered delivery intelligence systems self-initiated without engineering team. Five Oracle NetSuite domain certifications. PMP (Dec 2025), PSM I, ITIL 4.`,
+  ai: `AI Innovation & Delivery Leader who builds the systems, not just the strategy. Established a self-initiated <strong>AI Centre of Excellence (CoE)</strong> within Oracle NetSuite PS India GDC — without formal mandate, dedicated budget, or engineering resource — comprising two production <strong>Large Language Model (LLM)</strong> integrations (Claude API and GPT-5), an AI-powered PM Web Tool, and three automated Gen AI intelligence reporting systems. Defined and executed a phased <strong>AI transformation roadmap</strong> delivering measurable ROI: 37 hours of monthly manual reporting eliminated, 1,000–1,500 AI-driven staffing decisions monthly across 4 countries, and an estimated $7M in cumulative billing acceleration. Built <strong>Python ETL data pipeline</strong> underpinning all AI systems. Led Generative AI change management and adoption for 100+ practitioners. Published prompt engineering frameworks externally. Implemented <strong>responsible AI governance framework</strong> with compliance scoring, anomaly detection, and audit trails. <strong>Pre-ChatGPT AI practitioner</strong> — TensorFlow and LLM frameworks since 2019. Governs $5M+ portfolio as operational foundation. Oracle AI Vector Search Certified, OCI AI/GenAI, Google Cloud AI/ML.`,
+  tech: `Technology strategist and applied AI systems designer who closes the gap between technology roadmap and executable enterprise delivery. Combines <strong>$5M+ portfolio governance</strong> with hands-on AI system design, Python-based data engineering, and production LLM integration — translating technology strategy into operational intelligence systems at enterprise scale. Architected two production LLM integrations: <strong>Claude API compliance platform</strong> (37 hours → under 3 hours monthly, 100 users) and <strong>GPT-5 agentic staffing system</strong> (1,000–1,500 decisions/month, 4 countries). Designed Python ETL pipelines, <strong>Monte Carlo simulation</strong> modules, EVM calculation engines, and AI-powered offline PM Web Tool — all self-initiated technology strategy decisions without external engineering resource. <strong>Oracle AI Vector Search Certified Professional</strong> — applied to RAG pipeline and enterprise knowledge retrieval architecture design. TensorFlow and ML practitioner since 2019. OCI AI Foundations, Data Science, GenAI certified. Technology strategy decisions presented to Oracle Director/VP and client C-suite — outcomes directly informing platform investment and architecture direction.`
+};
+
+function setView(v, btn) {
+  document.querySelectorAll('.sw-btn').forEach(b => b.classList.remove('on'));
+  btn.classList.add('on');
+  document.getElementById('summary-body').innerHTML = summaries[v];
+}
+</script>
+</body>
+</html>
